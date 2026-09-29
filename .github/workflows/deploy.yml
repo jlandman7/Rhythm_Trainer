@@ -30,7 +30,7 @@ jobs:
         run: python -m pip install pygbag
 
       - name: Build with Pygbag
-        run: pygbag --build .
+        run: pygbag --build --disable-sound-format-error .
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
